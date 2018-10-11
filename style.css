@@ -1,0 +1,87 @@
+/* *{
+  margin: 0;
+  padding: 0;
+}*/
+
+header {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 1;
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid #C4C4C4;
+  background-color: white;
+}
+
+.header-container{
+  width: 1232px;
+  margin: 0 auto;
+}
+
+h1{
+  width: 208px;
+  display: inline-block;
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #FF002E;
+}
+
+.header-text{
+  display: inline-block;
+  position: relative;
+  top: 18px;
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #FF002E;
+}
+
+/* link style */
+
+.header-link{
+  float: right;
+  text-align: center;
+  padding: 0 34px;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #FF002E;;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* slideshow style */
+
+#slideshow{
+  padding-top: 128px;
+}
+
+.mySlide{
+  display: block;
+  /*position: relative;*/
+  height: 693px;
+  width: 1232px;
+  background-color: red;
+  margin: 0 auto 16px auto;
+}
