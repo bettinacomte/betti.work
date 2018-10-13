@@ -71,17 +71,77 @@ a:active {
     text-decoration: underline;
 }
 
+
 /* slideshow style */
 
-#slideshow{
+#container{
   padding-top: 128px;
-}
-
-.mySlide{
-  display: block;
-  /*position: relative;*/
   height: 693px;
   width: 1232px;
-  background-color: red;
+  border: solid green;
   margin: 0 auto 16px auto;
+  position: relative;
 }
+
+#slideshow{
+  height: 693px;
+  width: 1232px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.mySlides{
+  height: 693px;
+  width: 1232px;
+  margin: 0 auto 16px auto;
+  background-color: red;
+}
+
+ul#slideshow li:nth-child(2){
+    background-color: yellow;
+}
+
+#container li:first-child{
+		display:list-item;
+		position:absolute;
+	}
+
+	#container li{
+		position:absolute;
+		display:none;
+	}
+
+/* button next et prev */
+
+  #container .prevButton {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 2000;
+    left: 0;
+  }
+
+  #container .prevButton:hover{
+    background-color: blue;
+  }
+
+  #container .nextButton {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 2000;
+    right: 0;
+  }
+
+  #container .nextButton:hover{
+    background-color: blue;
+  }
