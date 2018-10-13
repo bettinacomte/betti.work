@@ -74,7 +74,7 @@ a:active {
 
 /* slideshow style */
 
-#container{
+.container{
   padding-top: 128px;
   height: 693px;
   width: 1232px;
@@ -104,19 +104,19 @@ ul#slideshow li:nth-child(2){
     background-color: yellow;
 }
 
-#container li:first-child{
+.container li:first-child{
 		display:list-item;
 		position:absolute;
 	}
 
-	#container li{
+	.container li{
 		position:absolute;
 		display:none;
 	}
 
 /* button next et prev */
 
-  #container .prevButton {
+  .container .prevButton {
     height: 100px;
     width: 100px;
     background-color: yellow;
@@ -127,14 +127,14 @@ ul#slideshow li:nth-child(2){
     left: 0;
   }
 
-  #container .prevButton:hover{
+  .container .prevButton:hover{
     background-color: blue;
   }
 
-  #container .nextButton {
+  .container .nextButton {
     height: 100px;
     width: 100px;
-    background-color: yellow;
+    background-color: green;
     position: absolute;
     top: 50%;
     cursor: pointer;
@@ -142,6 +142,46 @@ ul#slideshow li:nth-child(2){
     right: 0;
   }
 
-  #container .nextButton:hover{
+  .container .nextButton:hover{
     background-color: blue;
   }
+
+/* NEWS PAGE */
+
+/* grid */
+
+.grid-container{
+  height: 693px;
+  width: 1232px;
+  border: solid green;
+  padding-top: 128px;
+  margin: 0 auto 16px auto;
+  display: flex;
+  justify-content:flex-start;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.grid-item{
+  width: 400px;
+  height: 300px;
+  border: solid aqua;
+}
+
+.grid-item.is-empty {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*.grid::after {
+  content: "";
+  flex: auto;
+}*/

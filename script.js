@@ -1,8 +1,8 @@
 $(window).load(function(){
-		var pages = $('#container li'), current=0;
+		var pages = $('.container li'), current=0;
 		var currentPage,nextPage;
 
-		$('#container .button').click(function(){
+		$('.container .button').click(function(){
 			currentPage= pages.eq(current);
 			if($(this).hasClass('prevButton'))
 			{
