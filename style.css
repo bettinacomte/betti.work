@@ -187,9 +187,8 @@ ul#slideshow li:nth-child(2){
   flex: auto;
 }*/
 
-div.test{
+img.photo{
   height: 300px;
-  background-color: purple;
 }
 
 .date-news{
