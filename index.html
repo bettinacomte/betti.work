@@ -6,8 +6,10 @@
     <link href="resetcss.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="jquery-1.4.2.min.js"></script>
-    <script src="script.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="transition.js"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:200" rel="stylesheet">
   </head>
 
   <body>
@@ -15,27 +17,56 @@
       <div class="header-container">
         <h1 class="header-text">Bettina Comte</h1>
         <p class="header-text">Interactive Designer</p>
-        <a class="header-text header-link" href="info.html">Info</a>
-        <a class="header-text header-link" href="news.html">News</a>
-        <a class="header-text header-link" href="index.html">Projects</a>
+        <a id ="info" class="header-text header-link" href="info.html">Info</a>
+        <p id ="news" class="header-text header-link">News</p>
+        <a id ="projects" class="header-text header-link" href="index.html">Projects</a>
       </div>
     </header>
-    <div class="container">
-      <ul id="slideshow">
-        <li class="mySlides">
-          <h3>hello1</h3>
-        </li>
-        <li class="mySlides">
-          <h3>hello 2</h3>
-        </li>
-        <li class="mySlides">
-          <h3>hello 3</h3>
-        </li>
-      </ul>
-      <span class="button prevButton"></span>
-    	<span class="button nextButton"></span>
+
+    <!--PROJECTS-->
+    <div style="border: solid orange;" class="page" id="projectspage">
+      <div id="container">
+        <ul id="slideshow">
+          <li class="mySlides">
+            <h3>hello1</h3>
+          </li>
+          <li class="mySlides">
+            <h3>hello 2</h3>
+          </li>
+          <li class="mySlides">
+            <h3>hello 3</h3>
+          </li>
+        </ul>
+        <span class="button prevButton"></span>
+      	<span class="button nextButton"></span>
+      </div>
     </div>
 
+    <!--NEWS-->
+    <div style="border: solid green;" class="page" id="newspage">
+      <div class="grid-container">
+        <ul class="grid">
+          <li class="grid-item">
+            <img class='photo' src='img/raspberry.JPG'/>
+            <p class="date-news">20.11</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </li>
+          <li class="grid-item"></li>
+          <li class="grid-item"></li>
+          <li class="grid-item"></li>
+          <li class="grid-item"></li>
+          <li class="grid-item"></li>
+          <li class="grid-item"></li>
+          <li class="grid-item"></li>
+        </ul>
+      </div>
+    </div>
+
+
+<!--
+    <div id="test" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+    <div id="test2" style="background:red;height:100px;width:100px;position:absolute;"></div>
+-->
 
   </body>
 </html>

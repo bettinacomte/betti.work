@@ -7,7 +7,7 @@ header {
   margin: 0;
   padding: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   height: 64px;
   width: 100%;
   border-bottom: 1px solid #C4C4C4;
@@ -71,10 +71,17 @@ a:active {
     text-decoration: underline;
 }
 
+#projectspage{
+
+}
+
+#newspage{
+
+}
 
 /* slideshow style */
 
-.container{
+#container{
   padding-top: 128px;
   height: 693px;
   width: 1232px;
@@ -104,45 +111,45 @@ ul#slideshow li:nth-child(2){
     background-color: yellow;
 }
 
-.container li:first-child{
+#container li:first-child{
 		display:list-item;
 		position:absolute;
 	}
 
-	.container li{
+	#container li{
 		position:absolute;
 		display:none;
 	}
 
 /* button next et prev */
 
-  .container .prevButton {
+  #container .prevButton {
     height: 100px;
     width: 100px;
     background-color: yellow;
     position: absolute;
     top: 50%;
     cursor: pointer;
-    z-index: 2000;
+    z-index: 1;
     left: 0;
   }
 
-  .container .prevButton:hover{
+  #container .prevButton:hover{
     background-color: blue;
   }
 
-  .container .nextButton {
+  #container .nextButton {
     height: 100px;
     width: 100px;
     background-color: green;
     position: absolute;
     top: 50%;
     cursor: pointer;
-    z-index: 2000;
+    z-index: 1;
     right: 0;
   }
 
-  .container .nextButton:hover{
+  #container .nextButton:hover{
     background-color: blue;
   }
 
@@ -153,7 +160,7 @@ ul#slideshow li:nth-child(2){
 .grid-container{
   height: 693px;
   width: 1232px;
-  border: solid green;
+  border: solid red;
   padding-top: 128px;
   margin: 0 auto 16px auto;
   display: flex;
@@ -171,6 +178,7 @@ ul#slideshow li:nth-child(2){
   width: 400px;
   height: 576px;
   border: solid aqua;
+  margin-bottom: 133px;
 }
 
 .grid-item.is-empty {
