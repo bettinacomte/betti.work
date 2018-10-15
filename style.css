@@ -73,7 +73,7 @@ a:active {
     text-decoration: underline;
 }
 
-#pagecontainer{
+.pagecontainer{
   width: 100vw;
   border: solid blue;
   overflow-x: hidden;
@@ -102,10 +102,10 @@ a:active {
 
 /* slideshow style */
 
-#container{
+.container{
   padding-top: 128px;
   height: 693px;
-  width: 1232px;
+  width: 100vw;
   border: solid green;
   margin: 0 auto 16px auto;
   position: relative;
@@ -113,7 +113,7 @@ a:active {
 
 #slideshow{
   height: 693px;
-  width: 1232px;
+  width: 100vw;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -123,7 +123,7 @@ a:active {
 
 .mySlides{
   height: 693px;
-  width: 1232px;
+  width: 100vw;
   margin: 0 auto 16px auto;
   background-color: red;
 }
@@ -132,19 +132,19 @@ ul#slideshow li:nth-child(2){
     background-color: yellow;
 }
 
-#container li:first-child{
+.container li:first-child{
 		display:list-item;
 		position:absolute;
 	}
 
-	#container li{
+.container li{
 		position:absolute;
 		display:none;
 	}
 
 /* button next et prev */
 
-  #container .prevButton {
+  .container .prevButton {
     height: 100px;
     width: 100px;
     background-color: yellow;
@@ -155,11 +155,11 @@ ul#slideshow li:nth-child(2){
     left: 0;
   }
 
-  #container .prevButton:hover{
+  .container .prevButton:hover{
     background-color: blue;
   }
 
-  #container .nextButton {
+  .container .nextButton {
     height: 100px;
     width: 100px;
     background-color: green;
@@ -170,7 +170,7 @@ ul#slideshow li:nth-child(2){
     right: 0;
   }
 
-  #container .nextButton:hover{
+  .container .nextButton:hover{
     background-color: blue;
   }
 

@@ -1,11 +1,9 @@
 $(document).ready(function(){
     $("#news").click(function(){
-        $("#test").animate({
-            left: '250px',
-            opacity: '0.5',
-            height: '150px',
-            width: '150px'
-        });
+        console.log("toto")
+        $("#projectspage").animate({
+          x: "-100vw"
+        }, 5000);
         $("#test2").animate({
             left: '250px',
             opacity: '0.5',
