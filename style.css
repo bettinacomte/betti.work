@@ -17,7 +17,7 @@ header {
 }
 
 .header-container{
-  width: 90%;
+  width: 95%;
   max-width: 1232px;
   margin: 0 auto;
 }
@@ -104,7 +104,8 @@ a:active {
 
 .container{
   height: 693px;
-  width: 1232px;
+  width: 95%;
+  max-width: 1232px;
   background-color: #f2f4fb;
   margin: 0 auto 16px auto;
   position: relative;
@@ -113,7 +114,8 @@ a:active {
 
 #slideshow{
   height: 693px;
-  width: 1232px;
+  width: 100%;
+  max-width: 1232px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -180,7 +182,8 @@ a:active {
 
 .grid-container{
   height: 693px;
-  width: 1232px;
+  width: 95%;
+  max-width: 1232px;
   padding-top: 128px;
   margin: 0 auto 16px auto;
   display: flex;
