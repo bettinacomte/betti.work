@@ -103,7 +103,6 @@ a:active {
 /* slideshow style */
 
 .container{
-  height: 693px;
   width: 95%;
   max-width: 1232px;
   background-color: #f2f4fb;
@@ -113,7 +112,7 @@ a:active {
 
 
 #slideshow{
-  height: 693px;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
   width: 100%;
   max-width: 1232px;
   position: relative;
@@ -124,8 +123,11 @@ a:active {
 
 
 .mySlides{
-  height: 693px;
-  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   margin: 0 auto 16px auto;
   background-color: #ff9280;
 }
@@ -143,6 +145,7 @@ a:active {
 		position:absolute;
 		display:none;
 	}
+
 
 /* button next et prev */
 
