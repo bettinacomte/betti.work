@@ -3,6 +3,8 @@
   padding: 0;
 }*/
 
+
+
 header {
   margin: 0;
   padding: 0;
@@ -71,13 +73,32 @@ a:active {
     text-decoration: underline;
 }
 
-#projectspage{
+#pagecontainer{
+  width: 100vw;
+  border: solid blue;
+  overflow-x: hidden;
+}
 
+#page{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 200vw;
+  overflow-x: hidden;
+}
+
+#projectspage{
+  position: relative;
+  flex-basis: auto;
+  width: 100vw;
 }
 
 #newspage{
-
+  position: relative;
+  flex-basis: auto;
+  width: 100vw;
 }
+
 
 /* slideshow style */
 
