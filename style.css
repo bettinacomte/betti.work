@@ -3,8 +3,6 @@
   padding: 0;
 }*/
 
-
-
 header {
   margin: 0;
   padding: 0;
@@ -59,7 +57,7 @@ h1{
 .page-container{
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
 }
 
