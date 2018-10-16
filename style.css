@@ -45,12 +45,18 @@ h1{
 
 /* link style */
 
-.header-link{
+.headerlink{
+  top: 18px;
+  display: inline-block;
   float: right;
+}
+
+.headerlink li {
   text-align: center;
   padding: 0 34px;
 }
 
+/*
 a:link {
     color: black;
     background-color: transparent;
@@ -73,6 +79,7 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+*/
 
 .pagecontainer{
   width: 99vw;
@@ -204,6 +211,7 @@ a:active {
   width: 400px;
   height: 576px;
   margin-bottom: 133px;
+  border: solid red;
 }
 
 .grid-item.is-empty {
