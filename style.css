@@ -43,8 +43,6 @@ h1{
   color: #FF002E;
 }
 
-/* link style */
-
 .headerlink{
   top: 18px;
   display: inline-block;
@@ -56,60 +54,24 @@ h1{
   padding: 0 34px;
 }
 
-/*
-a:link {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
+/* pages */
 
-a:visited {
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-a:active {
-    color: #FF002E;;
-    background-color: transparent;
-    text-decoration: underline;
-}
-*/
-
-.pagecontainer{
-  width: 99vw;
-  overflow-x: hidden;
-}
-
-#page{
+.page-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
-  flex-direction: row;
-  position: relative;
-  width: 200vw;
-  overflow-x: hidden;
 }
 
-#projectspage{
+.section{
   position: relative;
-  flex-basis: auto;
   width: 100vw;
+  flex-shrink: 0;
 }
-
-#newspage{
-  position: relative;
-  flex-basis: auto;
-  width: 100vw;
-}
-
 
 /* slideshow style */
 
-.container{
+.project-container{
   width: 95%;
   max-width: 1232px;
   background-color: #f2f4fb;
@@ -143,12 +105,12 @@ a:active {
   padding-top: 128px;
 }
 
-.container li:first-child{
+.project-container li:first-child{
 		display:list-item;
 		position:absolute;
 	}
 
-.container li{
+.project-container li{
 		position:absolute;
 		display:none;
 	}
@@ -156,7 +118,7 @@ a:active {
 
 /* button next et prev */
 
-  .container .prevButton {
+  .project-container .prevButton {
     height: 100px;
     width: 100px;
     background-color: yellow;
@@ -167,11 +129,11 @@ a:active {
     left: 0;
   }
 
-  .container .prevButton:hover{
+  .project-container .prevButton:hover{
     background-color: blue;
   }
 
-  .container .nextButton {
+  .project-container .nextButton {
     height: 100px;
     width: 100px;
     background-color: green;
@@ -182,7 +144,7 @@ a:active {
     right: 0;
   }
 
-  .container .nextButton:hover{
+  .project-container .nextButton:hover{
     background-color: blue;
   }
 
