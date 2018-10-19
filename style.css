@@ -16,7 +16,7 @@ header {
 
 .header-container{
   width: 95%;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@ h1{
 
 .project-container{
   width: 95%;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto 16px auto;
   position: relative;
 }
@@ -79,7 +79,7 @@ h1{
 #slideshow{
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -118,35 +118,38 @@ h1{
 
 /* button next et prev */
 
+/*.buttons-container{
+  padding-top: 56.25%;
+  width: 100%;
+  max-width: 1400px;
+  position: absolute;
+  border: solid red;
+  z-index: 1;
+}*/
+
 .project-container .prevButton {
-    height: 20%;
+    height: 100%;
     width: 50%;
-    top: 50%;
-    background-color: yellow;
+    top: 0;
+    background-color: none;
     position: absolute;
     cursor: w-resize;
-    z-index: 1;
+    z-index: 2;
     left: 0;
   }
 
-  /*.project-container .prevButton:hover{
-    background-color: blue;
-  }*/
 
   .project-container .nextButton {
-    height: 100px;
-    width: 100px;
-    background-color: green;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    background-color: none;
     position: absolute;
-    top: 50%;
     cursor: e-resize;
-    z-index: 1;
+    z-index: 2;
     right: 0;
   }
 
-  /*.project-container .nextButton:hover{
-    background-color: blue;
-  }*/
 
 /* NEWS PAGE */
 
@@ -155,7 +158,7 @@ h1{
 .grid-container{
   height: 693px;
   width: 95%;
-  max-width: 1232px;
+  max-width: 1400px;
   padding-top: 128px;
   margin: 0 auto 16px auto;
   display: flex;
