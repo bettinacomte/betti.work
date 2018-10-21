@@ -10,7 +10,7 @@ header {
   z-index: 3;
   height: 64px;
   width: 100%;
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #f5f5f5;
   background-color: white;
 }
 
@@ -102,7 +102,7 @@ h1{
 }
 
 #project1{
-  padding-top: 128px;
+  padding-top: 88px;
 }
 
 .project-container li:first-child{
@@ -158,8 +158,8 @@ h1{
 .grid-container{
   height: 693px;
   width: 95%;
-  max-width: 1400px;
-  padding-top: 128px;
+  max-width: 1416px;
+  padding-top: 88px;
   margin: 0 auto 16px auto;
   display: flex;
   justify-content:flex-start;
@@ -168,31 +168,18 @@ h1{
 .grid{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .grid-item{
-  width: 400px;
+  width: 32%;
   height: 576px;
-  margin-bottom: 133px;
+  margin: 0px 8px 133px 8px;
 }
-
-.grid-item.is-empty {
-  height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/*.grid::after {
-  content: "";
-  flex: auto;
-}*/
 
 img.photo{
-  height: 300px;
+  width: 100%;
 }
 
 .date-news{
@@ -206,5 +193,5 @@ li p{
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  width: 360px;
+  width: 90%;
 }
