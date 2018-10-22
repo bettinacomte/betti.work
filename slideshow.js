@@ -1,6 +1,7 @@
 $(window).load(function(){
 		carroussel("project1");
 		carroussel("project2");
+		carroussel("project3");
 
 
 		function carroussel(containerId){
