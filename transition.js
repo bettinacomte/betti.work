@@ -7,6 +7,9 @@
         document.getElementById("projectspage").style.transitionDuration = "1s";
         document.getElementById("infopage").style.transform = "translateX(-100vw)";
         document.getElementById("infopage").style.transitionDuration = "1s";
+
+        document.getElementById("underbar").style.transform = "translateX(+200px)";
+        document.getElementById("underbar").style.transitionDuration = "1s";
     });
     $("#projects").click(function goProjects(){
         console.log("toto2");
