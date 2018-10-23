@@ -41,6 +41,17 @@ h1{
   color: #FF002E;
 }
 
+.header-text-link{
+  display: inline-block;
+  position: relative;
+  top: 18px;
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #FF002E;
+}
+
 .headerlink{
   top: 18px;
   display: inline-block;
@@ -49,30 +60,13 @@ h1{
 
 .headerlink li {
   text-align: center;
-  padding: 0 34px;
+  padding: 0 41px;
 }
-
-.headerlink li:hover{
-  color: purple;
-}
-
-/* .headerlink li:nth-of-type(1):hover ~ .underbar{
-  margin-left: 18px;
-}
-
-.headerlink li:nth-of-type(2):hover ~ .underbar{
-  margin-left: 167px;
-}
-
-.headerlink li:nth-of-type(3):hover ~ .underbar{
-  margin-left: 288px;
-} */
-
 
 #underbar{
   position: relative;
   margin-left: 18px;
-  width: 116px;
+  width: 30%;
   height: 4px;
   background-color: #FF002E;
   margin-top: 36px;
