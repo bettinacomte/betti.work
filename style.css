@@ -229,21 +229,19 @@ li p{
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  width: 50%;
+  width: 45%;
   left: 0;
 }
 
 /* img */
 
 .img-info-container{
-  width: 40%;
+  width: 50%;
   display: inline-block;
   position: relative;
-  right: 0;
 }
 
 #infopage img {
   width: 40%;
-  top: 50%;
-  left: 50%;
+  margin: 88px auto 16px auto;
 }

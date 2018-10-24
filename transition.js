@@ -9,7 +9,7 @@
         document.getElementById("infopage").style.transitionDuration = "800ms";
 
         document.getElementById("underbar").style.transform = "translateX(+160px)";
-        document.getElementById("underbar").style.transitionDuration = "800ms";
+        document.getElementById("underbar").style.transitionDuration = "400ms";
     });
     $("#projects").click(function goProjects(){
         console.log("toto2");
@@ -21,7 +21,7 @@
         document.getElementById("infopage").style.transitionDuration = "800ms";
 
         document.getElementById("underbar").style.transform = "translateX(0px)";
-        document.getElementById("underbar").style.transitionDuration = "800ms";
+        document.getElementById("underbar").style.transitionDuration = "400ms";
     });
     $("#info").click(function goInfos(){
         console.log("toto3");
@@ -33,6 +33,6 @@
         document.getElementById("infopage").style.transitionDuration = "800ms";
 
         document.getElementById("underbar").style.transform = "translateX(+298px)";
-        document.getElementById("underbar").style.transitionDuration = "800ms";
+        document.getElementById("underbar").style.transitionDuration = "400ms";
     });
 });
