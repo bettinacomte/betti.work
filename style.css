@@ -218,9 +218,17 @@ li p{
   margin: 88px auto 16px auto;
 }
 
+.info-container .image{
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  background-color: blue;
+  vertical-align: top;
+}
+
 .about-text{
   display: inline-block;
-  position: relative;
+  width: 50%;
 }
 
 .about{
@@ -237,7 +245,11 @@ li p{
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   font-weight: normal;
-  line-height: 100px;
+  margin-bottom: 50px;
+}
+
+.info-container ol {
+  margin-bottom: 50px;
 }
 
 /* text about */
@@ -252,7 +264,7 @@ li p{
 /* img */
 
 #infopage img {
-  width: 20%;
-  margin: 88px auto 16px auto;
-  padding: 200px;
+  display: inline-block;
+  width: 50%;
+  margin: 0px;
 }
