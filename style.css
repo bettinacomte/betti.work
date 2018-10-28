@@ -186,7 +186,7 @@ h1{
 }
 
 .grid-item{
-  width: 32%;
+  width: 31%;
   height: 576px;
   margin: 0px 8px 133px 8px;
 }
@@ -222,7 +222,6 @@ li p{
   display: inline-block;
   width: 49%;
   height: 100%;
-  background-color: blue;
   vertical-align: top;
 }
 
@@ -264,7 +263,13 @@ li p{
 /* img */
 
 #infopage img {
-  display: inline-block;
   width: 50%;
-  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 140px;
+}
+
+#infopage img:hover {
+  display: none;
 }
