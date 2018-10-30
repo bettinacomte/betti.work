@@ -262,13 +262,6 @@ li p{
 
 /* img */
 
-<<<<<<< HEAD
-#infopage img {
-  display: inline-block;
-  position: relative;
-  width: 20%;
-  padding: 100px;
-=======
 #infopage .image {
   margin-top: 90px;
   width: 49%;
@@ -288,5 +281,4 @@ li p{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
->>>>>>> 9b0c09927c203c5448564852fda869255385f100
 }
