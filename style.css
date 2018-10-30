@@ -252,7 +252,8 @@ li p{
 /* img */
 
 #infopage img {
+  display: inline-block;
+  position: relative;
   width: 20%;
-  margin: 88px auto 16px auto;
-  padding: 200px;
+  padding: 100px;
 }
