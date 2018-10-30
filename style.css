@@ -218,9 +218,16 @@ li p{
   margin: 88px auto 16px auto;
 }
 
+.info-container .image{
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  vertical-align: top;
+}
+
 .about-text{
   display: inline-block;
-  position: relative;
+  width: 50%;
 }
 
 .about{
@@ -237,7 +244,11 @@ li p{
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   font-weight: normal;
-  line-height: 100px;
+  margin-bottom: 50px;
+}
+
+.info-container ol {
+  margin-bottom: 50px;
 }
 
 /* text about */
@@ -251,9 +262,31 @@ li p{
 
 /* img */
 
+<<<<<<< HEAD
 #infopage img {
   display: inline-block;
   position: relative;
   width: 20%;
   padding: 100px;
+=======
+#infopage .image {
+  margin-top: 90px;
+  width: 49%;
+  height: 500px;
+  background: url(img/meinjapan.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+#infopage .image:hover {
+  margin-top: 90px;
+  width: 49%;
+  height: 500px;
+  background: url(img/meinjapan2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+>>>>>>> 9b0c09927c203c5448564852fda869255385f100
 }
