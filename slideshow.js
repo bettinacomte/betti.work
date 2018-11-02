@@ -2,6 +2,9 @@ $(window).load(function(){
 		carroussel("project1");
 		carroussel("project2");
 		carroussel("project3");
+		carroussel("project4");
+		carroussel("project5");
+		carroussel("project6");
 
 
 		function carroussel(containerId){
