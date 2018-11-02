@@ -352,7 +352,7 @@
     padding: 0;
     position: fixed;
     z-index: 3;
-    height: 64px;
+    height: 94px;
     width: 100%;
     border-bottom: 1px solid #f3f3f3;
     background-color: rgba( 255, 255, 255, 1);
@@ -366,11 +366,10 @@
   }
 
   h1{
-    width: 208px;
     display: inline-block;
     text-align: left;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
     color: #FF002E;
   }
@@ -381,7 +380,20 @@
     top: 18px;
     text-align: left;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #FF002E;
+    cursor: default;
+  }
+
+ .header-container p {
+    display: inline-block;
+    position: relative;
+    top: 18px;
+    padding-left: 20px;
+    text-align: right;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
     font-weight: normal;
     color: #FF002E;
     cursor: default;
@@ -390,10 +402,10 @@
   .header-text-link{
     display: inline-block;
     position: relative;
-    top: 18px;
+    top: 34px;
     text-align: left;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
     color: #FF002E;
     cursor: pointer;
@@ -402,32 +414,32 @@
   .headerlink{
     top: 18px;
     display: inline-block;
-    float: right;
+    float: left;
   }
 
   .headerlink li {
     text-align: center;
-    padding: 0 41px;
+    padding: 0 10px;
   }
 
   #underbar{
     position: relative;
     margin-left: 18px;
     width: 30%;
-    height: 4px;
+    height: 2px;
     background-color: #FF002E;
     margin-top: 37px;
   }
 
   .hiddentext{
-    color: white;
+    display: none;
   }
 
   /* pages */
   .about a {
     text-align: left;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     color: #FF002E;
     text-decoration: none;
@@ -654,5 +666,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (max-width: 319px) {
+  *{
+    display: none;
   }
 }
