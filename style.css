@@ -21,8 +21,9 @@ header {
   z-index: 3;
   height: 64px;
   width: 100%;
-  border-bottom: 1px solid #f5f5f5;
-  background-color: white;
+  border-bottom: 1px solid #f3f3f3;
+  background-color: rgba( 255, 255, 255, 1);
+
 }
 
 .header-container{
@@ -90,7 +91,7 @@ h1{
 }
 
 /* pages */
-a {
+.about a {
   text-align: left;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
@@ -98,6 +99,8 @@ a {
   color: #FF002E;
   text-decoration: none;
 }
+
+
 
 .page-container{
   width: 100vw;
@@ -113,14 +116,23 @@ a {
 }
 
 /* slideshow style */
-.year{
+.credits{
   text-align: left;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: normal;
-  letter-spacing: 4px;
-  color: #FF002E;
+  color: black;
   margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.credits a {
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FF002E;
+  text-decoration: none;
 }
 
 .project-container{
@@ -147,7 +159,7 @@ a {
   height: 100%;
   width: 100%;
   margin: 0 auto 16px auto;
-  background-color: #ff9280;
+  background-color: #FF002E;
 }
 
 .mySlides img{
