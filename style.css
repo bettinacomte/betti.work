@@ -57,14 +57,6 @@ h1{
 }
 
 .header-text-link{
-  display: inline-block;
-  position: relative;
-  top: 18px;
-  text-align: left;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  color: #FF002E;
   cursor: pointer;
 }
 
@@ -79,13 +71,27 @@ h1{
   padding: 0 41px;
 }
 
-#underbar{
+.underbar{
   position: relative;
-  margin-left: 18px;
+  margin-left: 4%;
   width: 30%;
   height: 4px;
   background-color: #FF002E;
   margin-top: 37px;
+  transition: margin-left 400ms ease-in-out;
+}
+
+.underbar-left{
+  margin-left: 4%;
+}
+
+.underbar-center{
+  margin-left: 41%;
+}
+
+.underbar-right{
+  margin-left: 70%;
+  background-color: black;
 }
 
 .hiddentext{
@@ -327,9 +333,24 @@ li p{
 
 /* tablets------------------------------------------------------------------------ */
 @media only screen and (max-width: 992px) {
-  body {
-    background-color: red;
+
+  .header-text {
+    font-size: 18px;
+    top: 23px;
   }
+
+  h1{
+    width: 148px;
+  }
+
+  #underbar {
+    margin-top: 43px;
+  }
+
+  .project-container{
+  margin: 0 auto 10px auto;
+  }
+
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) ----------------*/
