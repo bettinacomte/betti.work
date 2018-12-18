@@ -72,7 +72,6 @@ h1{
 
 .headerlink li {
   width: 32.5%;
-  max-width: 128px;
   text-align: center;
   /* padding: 0 41px; */
 }
@@ -81,7 +80,6 @@ h1{
   position: relative;
   margin-left: 2%;
   width: 30%;
-  max-width: 128px;
   height: 4px;
   background-color: #FF002E;
   margin-top: 37px;
@@ -372,16 +370,7 @@ footer{
  /* Small devices (portrait tablets and large phones, 600px and up) ----------------*/
  @media only screen and (max-width: 800px) {
 
-   .header-container {
-       flex-wrap: wrap;
-   }
-
-   .header-container p {
-       width: 40%;
-       height: 50px;
-   }
-
-   .headerlink {
+   header .headerlink {
      display: none;
    }
 
@@ -392,6 +381,15 @@ footer{
      background-color: lightgreen;
      opacity: 1;
    }
+
+      .header-container {
+          flex-wrap: wrap;
+      }
+
+      .header-container p {
+          width: 40%;
+          height: 50px;
+      }
 
  }
 
