@@ -10,6 +10,18 @@ var setUnderbarClass = function(className) {
   underbar.classList.add(className)
 }
 
+var resetUnderbarClass2 = function () {
+  var underbar = document.getElementsByClassName("underbar")[1];
+  underbar.classList.remove('underbar-right')
+  underbar.classList.remove('underbar-center')
+  underbar.classList.remove('underbar-left')
+}
+
+var setUnderbarClass2 = function(className) {
+  var underbar = document.getElementsByClassName("underbar")[1];
+  underbar.classList.add(className)
+}
+
 
 document.onreadystatechange = function () {
 
@@ -28,6 +40,12 @@ document.onreadystatechange = function () {
       setUnderbarClass('underbar-left')
       toProjectsTransition()
     })
+    var projects2 = document.getElementById('projects2')
+    projects2.addEventListener('click', function () {
+      resetUnderbarClass2()
+      setUnderbarClass2('underbar-left')
+      toProjectsTransition()
+    })
 
   var toNewsTransition = function () {
     document.getElementById("newspage").style.transform = "translateX(-100vw)";
@@ -38,10 +56,18 @@ document.onreadystatechange = function () {
     document.getElementById("infopage").style.transition = "800ms ease-in-out";
   }
 
+
     var news = document.getElementById('news')
     news.addEventListener('click', function () {
       resetUnderbarClass()
       setUnderbarClass('underbar-center')
+      toNewsTransition()
+    })
+
+    var news2 = document.getElementById('news2')
+    news2.addEventListener('click', function () {
+      resetUnderbarClass2()
+      setUnderbarClass2('underbar-center')
       toNewsTransition()
     })
 
@@ -58,6 +84,13 @@ document.onreadystatechange = function () {
     info.addEventListener('click', function () {
       resetUnderbarClass()
       setUnderbarClass('underbar-right')
+      toInfoTransition()
+    })
+
+    var info2 = document.getElementById('info2')
+    info2.addEventListener('click', function () {
+      resetUnderbarClass2()
+      setUnderbarClass2('underbar-right')
       toInfoTransition()
     })
 

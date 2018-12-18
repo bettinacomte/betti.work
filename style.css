@@ -375,23 +375,25 @@ footer{
    }
 
    body {
-     background-color: lightblue;
    }
    footer{
-     background-color: lightgreen;
      opacity: 1;
    }
 
-      .header-container {
-          flex-wrap: wrap;
-      }
+   .headerlink{
+     width: 100%;
+     top: 18px;
+     float: right;
+   }
 
-      .header-container p {
-          width: 40%;
-          height: 50px;
-      }
+  .header-container p {
+    width: 60%;
+    height: 50px;
+  }
 
  }
+
+
 
  /* Extra small devices (phones, 600px and down) -----------------------------------*/
 
