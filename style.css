@@ -52,11 +52,16 @@ h1{
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 24px;
   font-weight: normal;
-  color: #FF002E;
   cursor: default;
 }
 
 .header-text-link{
+  color: black;
+  cursor: pointer;
+}
+
+.header-text-link-active{
+  color: #FF002E;
   cursor: pointer;
 }
 
