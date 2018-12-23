@@ -22,6 +22,15 @@ var setUnderbarClass2 = function(className) {
   underbar.classList.add(className)
 }
 
+function resetTextClass(idName) {
+  var text = document.getElementById(idName);
+  text.classList.remove("header-text-link-active")
+}
+
+function setTextClass(idName) {
+  var text = document.getElementById(idName);
+  text.classList.add("header-text-link-active")
+}
 
 document.onreadystatechange = function () {
 
@@ -38,12 +47,18 @@ document.onreadystatechange = function () {
     projects.addEventListener('click', function () {
       resetUnderbarClass()
       setUnderbarClass('underbar-left')
+      resetTextClass("news")
+      resetTextClass("info")
+      setTextClass("projects")
       toProjectsTransition()
     })
     var projects2 = document.getElementById('projects2')
     projects2.addEventListener('click', function () {
       resetUnderbarClass2()
       setUnderbarClass2('underbar-left')
+      resetTextClass("news")
+      resetTextClass("info")
+      setTextClass("projects")
       toProjectsTransition()
     })
 
@@ -61,6 +76,9 @@ document.onreadystatechange = function () {
     news.addEventListener('click', function () {
       resetUnderbarClass()
       setUnderbarClass('underbar-center')
+      resetTextClass("projects")
+      resetTextClass("info")
+      setTextClass("news")
       toNewsTransition()
     })
 
@@ -68,6 +86,9 @@ document.onreadystatechange = function () {
     news2.addEventListener('click', function () {
       resetUnderbarClass2()
       setUnderbarClass2('underbar-center')
+      resetTextClass("projects")
+      resetTextClass("info")
+      setTextClass("news")
       toNewsTransition()
     })
 
@@ -83,10 +104,10 @@ document.onreadystatechange = function () {
     var info = document.getElementById('info')
     info.addEventListener('click', function () {
       resetUnderbarClass()
-      setUnderbarClass('underbar-right')
-      resetTextClass()
-      setTextClass('header-text-link-active')
-      console.log(hello);
+      setUnderbarClass("underbar-right")
+      resetTextClass("news")
+      resetTextClass("projects")
+      setTextClass("info")
       toInfoTransition()
     })
 
@@ -94,7 +115,12 @@ document.onreadystatechange = function () {
     info2.addEventListener('click', function () {
       resetUnderbarClass2()
       setUnderbarClass2('underbar-right')
+      resetTextClass("news")
+      resetTextClass("projects")
+      setTextClass("info")
       toInfoTransition()
     })
+
+
 
 };

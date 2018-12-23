@@ -64,6 +64,11 @@ h1{
   cursor: pointer;
 }
 
+.header-text-link-inactive{
+  color: black;
+  cursor: pointer;
+}
+
 .header-text-link-active{
   color: #FF002E;
   cursor: pointer;
