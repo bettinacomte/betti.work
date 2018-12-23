@@ -10,6 +10,7 @@ var setUnderbarClass = function(className) {
   underbar.classList.add(className)
 }
 
+<<<<<<< HEAD
 var resetUnderbarClass2 = function () {
   var underbar = document.getElementsByClassName("underbar")[1];
   underbar.classList.remove('underbar-right')
@@ -22,6 +23,17 @@ var setUnderbarClass2 = function(className) {
   underbar.classList.add(className)
 }
 
+=======
+var resetTextClass = function () {
+  var text = document.getElementsByClassName("header-text")[0];
+  underbar.classList.remove('header-text-link')
+}
+
+var setTextClass = function(classNameText){
+  var text = document.getElementsByClassName("header-text")[0];
+  text.classList.add(classNameText)
+}
+>>>>>>> 1d0b59cd64d9737e4db13536759aaa55167dec8b
 
 document.onreadystatechange = function () {
 
@@ -84,6 +96,9 @@ document.onreadystatechange = function () {
     info.addEventListener('click', function () {
       resetUnderbarClass()
       setUnderbarClass('underbar-right')
+      resetTextClass()
+      setTextClass('header-text-link-active')
+      console.log(hello);
       toInfoTransition()
     })
 
