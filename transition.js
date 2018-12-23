@@ -56,9 +56,9 @@ document.onreadystatechange = function () {
     projects2.addEventListener('click', function () {
       resetUnderbarClass2()
       setUnderbarClass2('underbar-left')
-      resetTextClass("news")
-      resetTextClass("info")
-      setTextClass("projects")
+      resetTextClass("news2")
+      resetTextClass("info2")
+      setTextClass("projects2")
       toProjectsTransition()
     })
 
@@ -86,9 +86,9 @@ document.onreadystatechange = function () {
     news2.addEventListener('click', function () {
       resetUnderbarClass2()
       setUnderbarClass2('underbar-center')
-      resetTextClass("projects")
-      resetTextClass("info")
-      setTextClass("news")
+      resetTextClass("projects2")
+      resetTextClass("info2")
+      setTextClass("news2")
       toNewsTransition()
     })
 
@@ -115,9 +115,9 @@ document.onreadystatechange = function () {
     info2.addEventListener('click', function () {
       resetUnderbarClass2()
       setUnderbarClass2('underbar-right')
-      resetTextClass("news")
-      resetTextClass("projects")
-      setTextClass("info")
+      resetTextClass("news2")
+      resetTextClass("projects2")
+      setTextClass("info2")
       toInfoTransition()
     })
 
